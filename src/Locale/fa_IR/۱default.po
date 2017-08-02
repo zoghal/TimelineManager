@@ -1,0 +1,443 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2017-08-01 16:15+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/Admin/ContactsController.php:57;82
+msgid "The contact has been saved."
+msgstr ""
+
+#: Controller/Admin/ContactsController.php:61;86
+msgid "The contact could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/ContactsController.php:104
+msgid "The contact has been deleted."
+msgstr ""
+
+#: Controller/Admin/ContactsController.php:106
+msgid "The contact could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/DiscussionsController.php:57;82
+msgid "The discussion has been saved."
+msgstr ""
+
+#: Controller/Admin/DiscussionsController.php:61;86
+msgid "The discussion could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/DiscussionsController.php:104
+msgid "The discussion has been deleted."
+msgstr ""
+
+#: Controller/Admin/DiscussionsController.php:106
+msgid "The discussion could not be deleted. Please, try again."
+msgstr ""
+
+#: Template/Admin/Contacts/add.ctp:8
+#: Template/Admin/Contacts/edit.ctp:8
+#: Template/Admin/Contacts/index.ctp:9;28
+#: Template/Admin/Contacts/view.ctp:9
+#: Template/Admin/Discussions/add.ctp:8
+#: Template/Admin/Discussions/edit.ctp:8
+#: Template/Admin/Discussions/index.ctp:9;23
+#: Template/Admin/Discussions/view.ctp:9;53
+#: Template/Bake/Element/form.ctp:30
+#: Template/Bake/Template/index.ctp:43;69
+#: Template/Bake/Template/view.ctp:64;160
+#: Template/Contacts/add.ctp:8
+#: Template/Contacts/edit.ctp:8
+#: Template/Contacts/index.ctp:9;28
+#: Template/Contacts/view.ctp:9
+msgid "Actions"
+msgstr "عملیات"
+
+#: Template/Admin/Contacts/add.ctp:9
+#: Template/Admin/Contacts/edit.ctp:15
+#: Template/Admin/Contacts/view.ctp:12
+#: Template/Contacts/add.ctp:9
+#: Template/Contacts/edit.ctp:15
+#: Template/Contacts/view.ctp:12
+msgid "List Contacts"
+msgstr "فهرست مخاطبین"
+
+#: Template/Admin/Contacts/add.ctp:15
+#: Template/Contacts/add.ctp:15
+msgid "Add Contact"
+msgstr "مخاطب جدید"
+
+#: Template/Admin/Contacts/add.ctp:28
+#: Template/Admin/Contacts/edit.ctp:34
+#: Template/Admin/Discussions/add.ctp:23
+#: Template/Admin/Discussions/edit.ctp:29
+#: Template/Bake/Element/form.ctp:102
+#: Template/Contacts/add.ctp:28
+#: Template/Contacts/edit.ctp:34
+msgid "Submit"
+msgstr "ذخیره"
+
+#: Template/Admin/Contacts/edit.ctp:10
+#: Template/Admin/Contacts/index.ctp:47
+#: Template/Admin/Discussions/edit.ctp:10
+#: Template/Admin/Discussions/index.ctp:35
+#: Template/Admin/Discussions/view.ctp:74
+#: Template/Bake/Element/form.ctp:33
+#: Template/Bake/Template/index.ctp:106
+#: Template/Bake/Template/view.ctp:171
+#: Template/Contacts/edit.ctp:10
+#: Template/Contacts/index.ctp:47
+msgid "Delete"
+msgstr "حذف"
+
+#: Template/Admin/Contacts/edit.ctp:12
+#: Template/Admin/Contacts/index.ctp:47
+#: Template/Admin/Contacts/view.ctp:11
+#: Template/Admin/Discussions/edit.ctp:12
+#: Template/Admin/Discussions/index.ctp:35
+#: Template/Admin/Discussions/view.ctp:11;74
+#: Template/Bake/Element/form.ctp:35
+#: Template/Bake/Template/index.ctp:106
+#: Template/Bake/Template/view.ctp:66;171
+#: Template/Contacts/edit.ctp:12
+#: Template/Contacts/index.ctp:47
+#: Template/Contacts/view.ctp:11
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Admin/Contacts/edit.ctp:21
+#: Template/Admin/Contacts/view.ctp:10
+#: Template/Contacts/edit.ctp:21
+#: Template/Contacts/view.ctp:10
+msgid "Edit Contact"
+msgstr "ویرایش مخاطب"
+
+#: Template/Admin/Contacts/index.ctp:10
+#: Template/Admin/Contacts/view.ctp:13
+#: Template/Contacts/index.ctp:10
+#: Template/Contacts/view.ctp:13
+msgid "New Contact"
+msgstr "مخاطب جدید"
+
+#: Template/Admin/Contacts/index.ctp:14
+#: Template/Contacts/index.ctp:14
+msgid "Contacts"
+msgstr "مخاطبین"
+
+#: Template/Admin/Contacts/index.ctp:45
+#: Template/Admin/Discussions/index.ctp:33
+#: Template/Admin/Discussions/view.ctp:72
+#: Template/Bake/Template/index.ctp:104
+#: Template/Bake/Template/view.ctp:169
+#: Template/Contacts/index.ctp:45
+msgid "View"
+msgstr "مشاهده"
+
+#: Template/Admin/Contacts/index.ctp:46
+#: Template/Admin/Discussions/index.ctp:34
+#: Template/Admin/Discussions/view.ctp:73
+#: Template/Bake/Template/index.ctp:105
+#: Template/Bake/Template/view.ctp:170
+#: Template/Contacts/index.ctp:46
+msgid "Edit"
+msgstr "ویرایش"
+
+#: Template/Admin/Contacts/index.ctp:55
+#: Template/Admin/Discussions/index.ctp:43
+#: Template/Bake/Template/index.ctp:114
+#: Template/Contacts/index.ctp:55
+msgid "first"
+msgstr "اول"
+
+#: Template/Admin/Contacts/index.ctp:56
+#: Template/Admin/Discussions/index.ctp:44
+#: Template/Bake/Template/index.ctp:115
+#: Template/Contacts/index.ctp:56
+msgid "previous"
+msgstr "قبلی"
+
+#: Template/Admin/Contacts/index.ctp:58
+#: Template/Admin/Discussions/index.ctp:46
+#: Template/Bake/Template/index.ctp:117
+#: Template/Contacts/index.ctp:58
+msgid "next"
+msgstr "بعدی"
+
+#: Template/Admin/Contacts/index.ctp:59
+#: Template/Admin/Discussions/index.ctp:47
+#: Template/Bake/Template/index.ctp:118
+#: Template/Contacts/index.ctp:59
+msgid "last"
+msgstr "آخر"
+
+#: Template/Admin/Contacts/index.ctp:61
+#: Template/Admin/Discussions/index.ctp:49
+#: Template/Bake/Template/index.ctp:120
+#: Template/Contacts/index.ctp:61
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr ""
+
+#: Template/Admin/Contacts/view.ctp:11
+#: Template/Contacts/view.ctp:11
+msgid "Delete Contact"
+msgstr "حذف مخاطب"
+
+#: Template/Admin/Contacts/view.ctp:20
+#: Template/Contacts/view.ctp:20
+msgid "Name"
+msgstr "نام"
+
+#: Template/Admin/Contacts/view.ctp:24
+#: Template/Contacts/view.ctp:24
+msgid "Family"
+msgstr ""
+
+#: Template/Admin/Contacts/view.ctp:28
+#: Template/Admin/Discussions/view.ctp:22
+#: Template/Contacts/view.ctp:28
+msgid "Label"
+msgstr "عنوان"
+
+#: Template/Admin/Contacts/view.ctp:32
+#: Template/Contacts/view.ctp:32
+msgid "Twitter1"
+msgstr "توییتر ۱"
+
+#: Template/Admin/Contacts/view.ctp:36
+#: Template/Contacts/view.ctp:36
+msgid "Twitter2"
+msgstr ""
+
+#: Template/Admin/Contacts/view.ctp:40
+#: Template/Contacts/view.ctp:40
+msgid "Facebook"
+msgstr ""
+
+#: Template/Admin/Contacts/view.ctp:44
+#: Template/Contacts/view.ctp:44
+msgid "Instagram"
+msgstr ""
+
+#: Template/Admin/Contacts/view.ctp:48
+#: Template/Contacts/view.ctp:48
+msgid "Github"
+msgstr "گیتهاب"
+
+#: Template/Admin/Contacts/view.ctp:52
+#: Template/Admin/Discussions/view.ctp:49
+#: Template/Contacts/view.ctp:52
+msgid "Note"
+msgstr "توضیحات"
+
+#: Template/Admin/Contacts/view.ctp:56
+#: Template/Admin/Discussions/view.ctp:26;39
+#: Template/Contacts/view.ctp:56
+msgid "Id"
+msgstr "شناسه"
+
+#: Template/Admin/Discussions/add.ctp:9
+#: Template/Admin/Discussions/edit.ctp:15
+#: Template/Admin/Discussions/view.ctp:12
+msgid "List Discussions"
+msgstr ""
+
+#: Template/Admin/Discussions/add.ctp:10
+#: Template/Admin/Discussions/edit.ctp:16
+#: Template/Admin/Discussions/index.ctp:11
+#: Template/Admin/Discussions/view.ctp:14
+msgid "List Timelines"
+msgstr ""
+
+#: Template/Admin/Discussions/add.ctp:11
+#: Template/Admin/Discussions/edit.ctp:17
+#: Template/Admin/Discussions/index.ctp:12
+#: Template/Admin/Discussions/view.ctp:15
+msgid "New Timeline"
+msgstr ""
+
+#: Template/Admin/Discussions/add.ctp:17
+msgid "Add Discussion"
+msgstr ""
+
+#: Template/Admin/Discussions/edit.ctp:23
+#: Template/Admin/Discussions/view.ctp:10
+msgid "Edit Discussion"
+msgstr ""
+
+#: Template/Admin/Discussions/index.ctp:10
+#: Template/Admin/Discussions/view.ctp:13
+msgid "New Discussion"
+msgstr ""
+
+#: Template/Admin/Discussions/index.ctp:16
+msgid "Discussions"
+msgstr ""
+
+#: Template/Admin/Discussions/view.ctp:11
+msgid "Delete Discussion"
+msgstr ""
+
+#: Template/Admin/Discussions/view.ctp:30
+msgid "Timeline Count"
+msgstr ""
+
+#: Template/Admin/Discussions/view.ctp:35
+msgid "Related Timelines"
+msgstr ""
+
+#: Template/Admin/Discussions/view.ctp:40
+msgid "Caption"
+msgstr "تیتر"
+
+#: Template/Admin/Discussions/view.ctp:41
+msgid "Occur"
+msgstr "اتفاق"
+
+#: Template/Admin/Discussions/view.ctp:42
+msgid "Private"
+msgstr ""
+
+#: Template/Admin/Discussions/view.ctp:43
+msgid "Parent Id"
+msgstr ""
+
+#: Template/Admin/Discussions/view.ctp:44
+msgid "Order"
+msgstr ""
+
+#: Template/Admin/Discussions/view.ctp:45
+msgid "From Id"
+msgstr ""
+
+#: Template/Admin/Discussions/view.ctp:46
+msgid "To Id"
+msgstr ""
+
+#: Template/Admin/Discussions/view.ctp:47
+msgid "Discussion Id"
+msgstr ""
+
+#: Template/Admin/Discussions/view.ctp:48
+msgid "Locate Id"
+msgstr ""
+
+#: Template/Admin/Discussions/view.ctp:50
+msgid "Created"
+msgstr ""
+
+#: Template/Admin/Discussions/view.ctp:51
+msgid "Modified"
+msgstr ""
+
+#: Template/Admin/Discussions/view.ctp:52
+msgid "Published"
+msgstr ""
+
+#: Template/Admin/Layout/error.ctp:35
+#: Template/Layout/error.ctp:35
+#: Template/Admin/Error/error400.ctp:36
+#: Template/Admin/Error/error500.ctp:41
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr ""
+
+#: Template/Admin/Layout/error.ctp:43
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/Bake/Element/form.ctp:39
+#: Template/Bake/Template/view.ctp:67
+msgid "List <%= $pluralHumanName %>"
+msgstr ""
+
+#: Template/Bake/Element/form.ctp:46
+#: Template/Bake/Template/index.ctp:51
+#: Template/Bake/Template/view.ctp:75
+msgid "List <%= $this->_pluralHumanName($alias) %>"
+msgstr ""
+
+#: Template/Bake/Element/form.ctp:47
+#: Template/Bake/Template/index.ctp:52
+msgid "New <%= $this->_singularHumanName($alias) %>"
+msgstr ""
+
+#: Template/Bake/Element/form.ctp:59
+msgid "<%= Inflector::humanize($action) %> <%= $singularHumanName %>"
+msgstr ""
+
+#: Template/Bake/Template/index.ctp:44
+#: Template/Bake/Template/view.ctp:68
+msgid "New <%= $singularHumanName %>"
+msgstr ""
+
+#: Template/Bake/Template/index.ctp:62
+msgid "<%= $pluralHumanName %>"
+msgstr ""
+
+#: Template/Bake/Template/login.ctp:25
+msgid "Please enter your username and password"
+msgstr ""
+
+#: Template/Bake/Template/login.ctp:29
+msgid "Login"
+msgstr ""
+
+#: Template/Bake/Template/view.ctp:65
+msgid "Edit <%= $singularHumanName %>"
+msgstr ""
+
+#: Template/Bake/Template/view.ctp:66
+msgid "Delete <%= $singularHumanName %>"
+msgstr ""
+
+#: Template/Bake/Template/view.ctp:76
+msgid "New <%= Inflector::humanize(Inflector::singularize(Inflector::underscore($alias))) %>"
+msgstr ""
+
+#: Template/Bake/Template/view.ctp:94
+msgid "<%= Inflector::humanize($details["
+msgstr ""
+
+#: Template/Bake/Template/view.ctp:99;116;132;141;158
+msgid "<%= Inflector::humanize($field) %>"
+msgstr ""
+
+#: Template/Bake/Template/view.ctp:108
+msgid "<%= Inflector::humanize(Inflector::singularize(Inflector::underscore($alias))) %>"
+msgstr ""
+
+#: Template/Bake/Template/view.ctp:133
+msgid "Yes"
+msgstr ""
+
+#: Template/Bake/Template/view.ctp:133
+msgid "No"
+msgstr ""
+
+#: Template/Bake/Template/view.ctp:153
+msgid "Related <%= $otherPluralHumanName %>"
+msgstr ""
+
+#: Template/Admin/Error/error400.ctp:37
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr ""
+
+#: Template/Admin/Error/error500.ctp:39
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+

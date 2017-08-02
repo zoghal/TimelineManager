@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="G:\xampp\htdocs\timeline\src\timeline.clpprj">
+	<settings><PM_URL><![CDATA[http://localhost/timeline/src/]]></PM_URL><PM_HOME_URL><![CDATA[http://localhost/timeline/src/]]></PM_HOME_URL><PM_LIBS><![CDATA[G:\xampp\htdocs\timeline\vendor\;]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";G:\xampp\htdocs\timeline\src\Template\Bake;G:\xampp\htdocs\timeline\src\Template\Bake\Controller;G:\xampp\htdocs\timeline\src\Template\Bake\Controller\component.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Controller\controller.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Element;G:\xampp\htdocs\timeline\src\Template\Bake\Element\Controller;G:\xampp\htdocs\timeline\src\Template\Bake\Element\Controller\add.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Element\Controller\delete.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Element\Controller\edit.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Element\Controller\index.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Element\Controller\login.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Element\Controller\logout.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Element\Controller\view.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Element\array_property.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Element\form.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Form;G:\xampp\htdocs\timeline\src\Template\Bake\Form\form.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Layout;G:\xampp\htdocs\timeline\src\Template\Bake\Layout\default.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Mailer;G:\xampp\htdocs\timeline\src\Template\Bake\Mailer\mailer.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Middleware;G:\xampp\htdocs\timeline\src\Template\Bake\Middleware\middleware.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Model;G:\xampp\htdocs\timeline\src\Template\Bake\Model\behavior.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Model\entity.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Model\table.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Plugin;G:\xampp\htdocs\timeline\src\Template\Bake\Plugin\README.md.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Plugin\composer.json.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Plugin\config;G:\xampp\htdocs\timeline\src\Template\Bake\Plugin\config\routes.php.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Plugin\phpunit.xml.dist.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Plugin\src;G:\xampp\htdocs\timeline\src\Template\Bake\Plugin\src\Controller;G:\xampp\htdocs\timeline\src\Template\Bake\Plugin\src\Controller\AppController.php.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Plugin\tests;G:\xampp\htdocs\timeline\src\Template\Bake\Plugin\tests\bootstrap.php.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Plugin\webroot;G:\xampp\htdocs\timeline\src\Template\Bake\Plugin\webroot\empty.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Shell;G:\xampp\htdocs\timeline\src\Template\Bake\Shell\helper.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Shell\shell.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Shell\task.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Template;G:\xampp\htdocs\timeline\src\Template\Bake\Template\add.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Template\edit.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Template\index.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Template\login.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\Template\view.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\View;G:\xampp\htdocs\timeline\src\Template\Bake\View\cell.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\View\helper.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\tests;G:\xampp\htdocs\timeline\src\Template\Bake\tests\fixture.ctp;G:\xampp\htdocs\timeline\src\Template\Bake\tests\test_case.ctp;"/><added value=""/><lastopfiles>
+	</lastopfiles>
+	<errors version="5.11">
+	</errors>
+	<cakedata>
+	</cakedata>
+	<dplmenupath>
+	</dplmenupath><laravael>
+	</laravael><smartyassings>
+	</smartyassings><twigtemplate>
+	</twigtemplate><yiidata>
+	</yiidata>
+	<todoblock>
+	</todoblock>
+	<dbgurls>
+	</dbgurls>
+	<filescache>
+		<file name="G:\xampp\htdocs\timeline\src\View\AppView.php" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\View\AjaxView.php" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Pages\home.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Layout\rss\default.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Layout\Email\text\default.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Layout\Email\html\default.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Layout\error.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Layout\default.ctp" crc="1501570456"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Layout\ajax.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Error\error500.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Error\error400.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Email\text\default.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Email\html\default.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Element\Flash\success.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Element\Flash\error.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Element\Flash\default.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Contacts\view.ctp" crc="1501603974"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Contacts\index.ctp" crc="1501603974"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Contacts\edit.ctp" crc="1501603974"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Contacts\add.ctp" crc="1501603974"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Timelines\view.ctp" crc="1501643496"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Timelines\index.ctp" crc="1501650212"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Timelines\edit.ctp" crc="1501643496"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Timelines\add.ctp" crc="1501643496"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Tags\view.ctp" crc="1501609929"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Tags\index.ctp" crc="1501609929"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Tags\edit.ctp" crc="1501609929"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Tags\add.ctp" crc="1501609929"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Pages\admin.ctp" crc="1501639034"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Locations\view.ctp" crc="1501607424"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Locations\index.ctp" crc="1501607424"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Locations\edit.ctp" crc="1501607424"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Locations\add.ctp" crc="1501607424"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Layout\rss\default.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Layout\Email\text\default.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Layout\Email\html\default.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Layout\error.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Layout\default.ctp" crc="1501610307"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Layout\ajax.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Error\error500.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Error\error400.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Email\text\default.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Email\html\default.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Element\Flash\success.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Element\Flash\error.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Element\Flash\default.ctp" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Discussions\view.ctp" crc="1501574826"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Discussions\index.ctp" crc="1501574826"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Discussions\edit.ctp" crc="1501574826"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Discussions\add.ctp" crc="1501574826"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Contacts\view.ctp" crc="1501574818"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Contacts\index.ctp" crc="1501604797"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Contacts\edit.ctp" crc="1501602706"/>
+		<file name="G:\xampp\htdocs\timeline\src\Template\Admin\Contacts\add.ctp" crc="1501603365"/>
+		<file name="G:\xampp\htdocs\timeline\src\Shell\ConsoleShell.php" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Model\Table\TimelinesTagsTable.php" crc="1501644342"/>
+		<file name="G:\xampp\htdocs\timeline\src\Model\Table\TimelinesTable.php" crc="1501644458"/>
+		<file name="G:\xampp\htdocs\timeline\src\Model\Table\TimelinesContactsTable.php" crc="1501644336"/>
+		<file name="G:\xampp\htdocs\timeline\src\Model\Table\TagsTable.php" crc="1501639151"/>
+		<file name="G:\xampp\htdocs\timeline\src\Model\Table\LocationsTable.php" crc="1501639151"/>
+		<file name="G:\xampp\htdocs\timeline\src\Model\Table\DiscussionsTable.php" crc="1501639151"/>
+		<file name="G:\xampp\htdocs\timeline\src\Model\Table\ContactsTable.php" crc="1501639151"/>
+		<file name="G:\xampp\htdocs\timeline\src\Model\Entity\TimelinesTag.php" crc="1501644342"/>
+		<file name="G:\xampp\htdocs\timeline\src\Model\Entity\TimelinesContact.php" crc="1501644336"/>
+		<file name="G:\xampp\htdocs\timeline\src\Model\Entity\Timeline.php" crc="1501643496"/>
+		<file name="G:\xampp\htdocs\timeline\src\Model\Entity\Tag.php" crc="1501639151"/>
+		<file name="G:\xampp\htdocs\timeline\src\Model\Entity\Location.php" crc="1501639151"/>
+		<file name="G:\xampp\htdocs\timeline\src\Model\Entity\Discussion.php" crc="1501639151"/>
+		<file name="G:\xampp\htdocs\timeline\src\Model\Entity\Contact.php" crc="1501639151"/>
+		<file name="G:\xampp\htdocs\timeline\src\Controller\Admin\TimelinesController.php" crc="1501644060"/>
+		<file name="G:\xampp\htdocs\timeline\src\Controller\Admin\TagsController.php" crc="1501609929"/>
+		<file name="G:\xampp\htdocs\timeline\src\Controller\Admin\PagesController.php" crc="1501638942"/>
+		<file name="G:\xampp\htdocs\timeline\src\Controller\Admin\LocationsController.php" crc="1501607424"/>
+		<file name="G:\xampp\htdocs\timeline\src\Controller\Admin\DiscussionsController.php" crc="1501574826"/>
+		<file name="G:\xampp\htdocs\timeline\src\Controller\Admin\ContactsController.php" crc="1501574818"/>
+		<file name="G:\xampp\htdocs\timeline\src\Controller\PagesController.php" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Controller\ErrorController.php" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Controller\AppController.php" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Console\Installer.php" crc="1501568888"/>
+		<file name="G:\xampp\htdocs\timeline\src\Application.php" crc="1501568888"/>
+	</filescache>
+</project>
