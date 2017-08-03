@@ -9,10 +9,10 @@ use Cake\Validation\Validator;
 /**
  * Timelines Model
  *
- * @property \App\Model\Table\CantactsTable|\Cake\ORM\Association\BelongsTo $Cantacts
+ * @property \App\Model\Table\ContactsTable|\Cake\ORM\Association\BelongsTo $Contacts
  * @property \App\Model\Table\DiscussionsTable|\Cake\ORM\Association\BelongsTo $Discussions
  * @property \App\Model\Table\LocationsTable|\Cake\ORM\Association\BelongsTo $Locations
- * @property \App\Model\Table\TimelinesRelationsTable|\Cake\ORM\Association\HasMany $TimelinesRelations
+ * @property \App\Model\Table\ContactsTable|\Cake\ORM\Association\BelongsToMany $Contacts
  * @property \App\Model\Table\TagsTable|\Cake\ORM\Association\BelongsToMany $Tags
  *
  * @method \App\Model\Entity\Timeline get($primaryKey, $options = [])
@@ -40,15 +40,15 @@ class TimelinesTable extends Table
         parent::initialize($config);
 
         $this->setTable('timelines');
-        $this->setDisplayField('caption');
+        $this->setDisplayField('id');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
         $this->addBehavior('CounterCache', ['Discussions' => ['timeline_count']]);
 
-        $this->belongsTo('Cantacts', [
-            'foreignKey' => 'cantact_id',
-            'joinType' => 'INNER'
+        $this->belongsTo('Owners', [
+        	'className' => 'Contacts',
+            'foreignKey' => 'owner_id'
         ]);
         $this->belongsTo('Discussions', [
             'foreignKey' => 'discussion_id'
@@ -56,8 +56,12 @@ class TimelinesTable extends Table
         $this->belongsTo('Locations', [
             'foreignKey' => 'locate_id'
         ]);
-        $this->hasMany('TimelinesRelations', [
-            'foreignKey' => 'timeline_id'
+        $this->belongsToMany('Contacts', [
+
+            'foreignKey' => 'timeline_id',
+            'targetForeignKey' => 'contact_id',
+			'joinTable' => 'timelines_contacts'
+            
         ]);
         $this->belongsToMany('Tags', [
             'foreignKey' => 'timeline_id',
@@ -89,8 +93,7 @@ class TimelinesTable extends Table
 
         $validator
             ->boolean('private')
-            ->requirePresence('private', 'create')
-            ->notEmpty('private');
+            ->allowEmpty('private');
 
         $validator
             ->integer('order')
@@ -125,7 +128,7 @@ class TimelinesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['cantact_id'], 'Cantacts'));
+        $rules->add($rules->existsIn(['owner_id'], 'Owners'));
         $rules->add($rules->existsIn(['discussion_id'], 'Discussions'));
         $rules->add($rules->existsIn(['locate_id'], 'Locations'));
 

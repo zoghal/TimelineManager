@@ -25,12 +25,7 @@ class DiscussionsTableTest extends TestCase
      */
     public $fixtures = [
         'app.discussions',
-        'app.timelines',
-        'app.locations',
-        'app.contacts',
-        'app.timelines_contacts',
-        'app.tags',
-        'app.timelines_tags'
+        'app.timelines'
     ];
 
     /**

@@ -1,8 +1,8 @@
 <?php
 /**
-  * @var \App\View\AppView $this
-  * @var \App\Model\Entity\Contact[]|\Cake\Collection\CollectionInterface $contacts
-  */
+* @var \App\View\AppView $this
+* @var \App\Model\Entity\Contact[]|\Cake\Collection\CollectionInterface $contacts
+*/
 ?>
 <nav  id="actions-sidebar">
     <ul class="side-nav">
@@ -12,34 +12,31 @@
 </nav>
 <div class="contacts index content-wrapper">
     <h3><?= __('Contacts') ?></h3>
-    <table cellpadding="0" cellspacing="0">
-        <thead>
-            <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('name') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('family') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('label') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('note') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($contacts as $contact): ?>
-            <tr>
-                <td><?= $this->Number->format($contact->id) ?></td>
-                <td><?= h($contact->name) ?></td>
-                <td><?= h($contact->family) ?></td>
-                <td><?= h($contact->label) ?></td>
-                <td><?= h($contact->note) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $contact->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $contact->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $contact->id], ['confirm' => __('Are you sure you want to delete # {0}?', $contact->id)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
+    <div class="contacts-lists">
+
+        <?php
+        foreach ($contacts as $contact): ?>
+        <div class="contact-profile">
+        	<div class="body">
+            <div class="avatar">
+                <?= $this->Html->image( '/files/Contacts/'.$contact->id.'.jpg') ?>
+            </div>
+            <div class="info">
+                <div><?= h($contact->full_name) ?></div>
+
+                <a><?= h($contact->label) ?></a>
+            </div>
+            </div>
+            <div class="actions">
+                <?= $this->Html->link(__('View'), ['action' => 'view', $contact->id]) ?>
+                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $contact->id]) ?>
+                <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $contact->id], ['confirm' => __('Are you sure you want to delete # {0}?', $contact->id)]) ?>
+            </div>
+
+        </div>
+        <?php endforeach; ?>
+    </div>
+
     <div class="paginator">
         <ul class="pagination">
             <?= $this->Paginator->first('<< ' . __('first')) ?>

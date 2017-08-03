@@ -52,11 +52,13 @@ class ContactsController extends AppController
     {
         $contact = $this->Contacts->newEntity();
         if ($this->request->is('post')) {
+       
+        
             $contact = $this->Contacts->patchEntity($contact, $this->request->getData());
             if ($this->Contacts->save($contact)) {
                 $this->Flash->success(__('The contact has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
+		
+                return $this->redirect(['action' => 'edit',$contact->id]);
             }
             $this->Flash->error(__('The contact could not be saved. Please, try again.'));
         }
@@ -72,11 +74,29 @@ class ContactsController extends AppController
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function edit($id = null)
-    {
+    {	
+ 
         $contact = $this->Contacts->get($id, [
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
+ 			$file = $this->request->getData('avatar');
+ 			
+ 			
+        	if (is_uploaded_file($file['tmp_name'])){
+				 	$size = new \Imagine\Image\Box(300, 300);
+                    $mode = \Imagine\Image\ImageInterface::THUMBNAIL_OUTBOUND;
+                    $imagine = new \Imagine\Gd\Imagine();
+                     
+                     $extension = 'files'.DS.'contacts'.DS.$id.'.jpg';
+                     $imagine->open($file['tmp_name'])
+                        ->thumbnail($size, $mode)
+                        ->save(WWW_ROOT.$extension,['jpeg_quality' => 90]);
+                       
+                        
+                    
+			}
+        	
             $contact = $this->Contacts->patchEntity($contact, $this->request->getData());
             if ($this->Contacts->save($contact)) {
                 $this->Flash->success(__('The contact has been saved.'));

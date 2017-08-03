@@ -9,7 +9,7 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $caption
  * @property \Cake\I18n\FrozenDate $occur
- * @property int $cantact_id
+ * @property int $contact_id
  * @property bool $private
  * @property int $order
  * @property int $discussion_id
@@ -22,10 +22,10 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
- * @property \App\Model\Entity\Cantact $cantact
+ * @property \App\Model\Entity\Contact $contact
  * @property \App\Model\Entity\Discussion $discussion
  * @property \App\Model\Entity\Location $location
- * @property \App\Model\Entity\TimelinesRelation[] $timelines_relations
+ * @property \App\Model\Entity\TimelinesRelationship[] $timelines_relationships
  * @property \App\Model\Entity\Tag[] $tags
  */
 class Timeline extends Entity

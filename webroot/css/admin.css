@@ -725,7 +725,7 @@ td.actions a{
 
 .form-col.full{
 
-    flex: 1 1 0;
+    flex: 1 0 auto;
 }
 
 .form-row .input.text{
@@ -733,7 +733,7 @@ td.actions a{
 }
 
 .input{
-	
+
 }
 
 .input.date{
@@ -758,11 +758,77 @@ td.actions a{
 
 
 .ContentCheckBox .input.select{
-	display:flex;
-	flex-direction: row;	
-	flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .ContentCheckBox .input.select .checkbox{
-	flex:0
-	 1 25%;
+    flex: 0  1 25%;
+}
+
+
+
+
+
+
+
+
+/**************************************/
+
+.contacts-lists{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.contacts-lists .contact-profile{
+	flex:1 1 20%;
+	border: 1px solid #44617a;
+	
+	margin: 10px;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 2px 2px 3px #999;
+	border-radius: 1px;
+}
+
+
+ .contact-profile .body,
+ .contact-profile .actions{
+	display: flex;
+	flex-direction: row;
+		background-color: #eee;
+}
+
+
+.contact-profile .actions{
+	background-color: #44617a;
+	
+}
+
+.contact-profile .avatar{
+	flex: 0 0 90px;
+	margin: 5px;
+	border: 1px solid #000;
+	height: 90px;
+	background-color: #999;
+}
+
+.contact-profile .info{
+	flex: 1;
+	text-align: center;
+	align-self: center;
+}
+
+.contact-profile .info div{
+	font-size: 16px;
+}
+
+.contact-profile .actions a{
+	flex: 1;
+	text-align: center;
+	color: #35C4D2;
 }

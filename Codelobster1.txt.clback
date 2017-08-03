@@ -1,0 +1,29 @@
+   <!-- <td><?= h() ?></td>
+                <td><?= h($timeline->private) ?></td>
+                <td><?= $this->Number->format($timeline->order) ?></td>
+                <td><?= $timeline->has('discussion') ? $this->Html->link($timeline->discussion->id, ['controller' => 'Discussions', 'action' => 'view', $timeline->discussion->id]) : '' ?></td>
+                <td><?= $timeline->has('location') ? $this->Html->link($timeline->location->id, ['controller' => 'Locations', 'action' => 'view', $timeline->location->id]) : '' ?></td>
+                <td><?= $timeline->created->i18nformat('yyyy٫MM٫dd', null, 'fa-IR@calendar=persian') ?></td>
+                <td><?= $timeline->modified->i18nformat('yyyy٫MM٫dd', null, 'fa-IR@calendar=persian') ?></td>
+                <td><?= h($timeline->published) ?></td>
+                <td class="actions">
+            
+                    <?= $this->Html->link(__('View'), ['action' => 'view', $timeline->id]) ?>
+                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $timeline->id]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $timeline->id], ['confirm' => __('Are you sure you want to delete # {0}?', $timeline->id)]) ?>
+                </td> -->
+                
+                
+                
+                
+                
+    <fieldset class="ContentCheckBox">
+        <legend><?= __('Document Contacts') ?></legend>
+		 <?= $this->Form->control('relationships._ids', ['options' => $contacts,'label' => false,'multiple' => 'checkbox']); ?>
+     
+
+    </fieldset>
+    <fieldset class="ContentCheckBox">
+        <legend><?= __('Document Tags') ?></legend>
+        <?= $this->Form->control('tags._ids', ['options' => $tags,'label' => false,'multiple' => 'checkbox']); ?>
+    </fieldset>

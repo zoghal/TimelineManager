@@ -34,6 +34,8 @@ class TimelinesTagsTable extends Table
         parent::initialize($config);
 
         $this->setTable('timelines_tags');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->belongsTo('Timelines', [
             'foreignKey' => 'timeline_id',
@@ -43,6 +45,21 @@ class TimelinesTagsTable extends Table
             'foreignKey' => 'tag_id',
             'joinType' => 'INNER'
         ]);
+    }
+
+    /**
+     * Default validation rules.
+     *
+     * @param \Cake\Validation\Validator $validator Validator instance.
+     * @return \Cake\Validation\Validator
+     */
+    public function validationDefault(Validator $validator)
+    {
+        $validator
+            ->integer('id')
+            ->allowEmpty('id', 'create');
+
+        return $validator;
     }
 
     /**

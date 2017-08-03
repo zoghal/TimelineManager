@@ -1,0 +1,21 @@
+[03-Aug-2017 10:29:34 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 8192 bytes) in G:\wamp\sites\timeline\vendor\imagine\imagine\lib\Imagine\Gd\Image.php on line 602
+[03-Aug-2017 10:29:34 UTC] PHP Stack trace:
+[03-Aug-2017 10:29:34 UTC] PHP   1. {main}() G:\wamp\sites\timeline\webroot\index.php:0
+[03-Aug-2017 10:29:34 UTC] PHP   2. Cake\Http\Server->run() G:\wamp\sites\timeline\webroot\index.php:37
+[03-Aug-2017 10:29:34 UTC] PHP   3. Cake\Http\Runner->run() G:\wamp\sites\timeline\vendor\cakephp\cakephp\src\Http\Server.php:80
+[03-Aug-2017 10:29:34 UTC] PHP   4. Cake\Http\Runner->__invoke() G:\wamp\sites\timeline\vendor\cakephp\cakephp\src\Http\Runner.php:51
+[03-Aug-2017 10:29:34 UTC] PHP   5. Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke() G:\wamp\sites\timeline\vendor\cakephp\cakephp\src\Http\Runner.php:65
+[03-Aug-2017 10:29:34 UTC] PHP   6. Cake\Http\Runner->__invoke() G:\wamp\sites\timeline\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:92
+[03-Aug-2017 10:29:34 UTC] PHP   7. Cake\Routing\Middleware\AssetMiddleware->__invoke() G:\wamp\sites\timeline\vendor\cakephp\cakephp\src\Http\Runner.php:65
+[03-Aug-2017 10:29:34 UTC] PHP   8. Cake\Http\Runner->__invoke() G:\wamp\sites\timeline\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:88
+[03-Aug-2017 10:29:34 UTC] PHP   9. Cake\Routing\Middleware\RoutingMiddleware->__invoke() G:\wamp\sites\timeline\vendor\cakephp\cakephp\src\Http\Runner.php:65
+[03-Aug-2017 10:29:34 UTC] PHP  10. Cake\Http\Runner->__invoke() G:\wamp\sites\timeline\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:59
+[03-Aug-2017 10:29:34 UTC] PHP  11. App\Application->__invoke() G:\wamp\sites\timeline\vendor\cakephp\cakephp\src\Http\Runner.php:65
+[03-Aug-2017 10:29:34 UTC] PHP  12. Cake\Http\ActionDispatcher->dispatch() G:\wamp\sites\timeline\vendor\cakephp\cakephp\src\Http\BaseApplication.php:78
+[03-Aug-2017 10:29:34 UTC] PHP  13. Cake\Http\ActionDispatcher->_invoke() G:\wamp\sites\timeline\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php:93
+[03-Aug-2017 10:29:34 UTC] PHP  14. App\Controller\Admin\ContactsController->invokeAction() G:\wamp\sites\timeline\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php:119
+[03-Aug-2017 10:29:35 UTC] PHP  15. App\Controller\Admin\ContactsController->edit() G:\wamp\sites\timeline\vendor\cakephp\cakephp\src\Controller\Controller.php:440
+[03-Aug-2017 10:29:35 UTC] PHP  16. Imagine\Gd\Image->thumbnail() G:\wamp\sites\timeline\src\Controller\Admin\ContactsController.php:93
+[03-Aug-2017 10:29:35 UTC] PHP  17. Imagine\Gd\Image->copy() G:\wamp\sites\timeline\vendor\imagine\imagine\lib\Imagine\Image\AbstractImage.php:42
+[03-Aug-2017 10:29:35 UTC] PHP  18. Imagine\Gd\Image->createImage() G:\wamp\sites\timeline\vendor\imagine\imagine\lib\Imagine\Gd\Image.php:93
+[03-Aug-2017 10:29:35 UTC] PHP  19. imagecreatetruecolor() G:\wamp\sites\timeline\vendor\imagine\imagine\lib\Imagine\Gd\Image.php:602

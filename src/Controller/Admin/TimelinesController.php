@@ -55,7 +55,7 @@ class TimelinesController extends AppController
     {
         $timeline = $this->Timelines->newEntity();
         if ($this->request->is('post')) {
-            $timeline = $this->Timelines->patchEntity($timeline, $this->request->getData());
+            $timeline = $this->Timelines->patchEntity($timeline, $this->request->getData()           );
             if ($this->Timelines->save($timeline)) {
                 $this->Flash->success(__('The timeline has been saved.'));
 
@@ -66,8 +66,10 @@ class TimelinesController extends AppController
         $discussions = $this->Timelines->Discussions->find('list', ['limit' => 200]);
         $locations = $this->Timelines->Locations->find('list', ['limit' => 200]);
         $contacts = $this->Timelines->Contacts->find('list', ['limit' => 200]);
+        $owners = $this->Timelines->Owners->find('list', ['limit' => 200]);
         $tags = $this->Timelines->Tags->find('list', ['limit' => 200]);
-        $this->set(compact('timeline', 'discussions', 'locations', 'contacts', 'tags'));
+        
+        $this->set(compact('timeline', 'discussions', 'locations', 'contacts', 'tags','owners'));
         $this->set('_serialize', ['timeline']);
     }
 
@@ -83,6 +85,7 @@ class TimelinesController extends AppController
         $timeline = $this->Timelines->get($id, [
             'contain' => ['Contacts', 'Tags']
         ]);
+    
         if ($this->request->is(['patch', 'post', 'put'])) {
             $timeline = $this->Timelines->patchEntity($timeline, $this->request->getData());
             if ($this->Timelines->save($timeline)) {
@@ -92,11 +95,13 @@ class TimelinesController extends AppController
             }
             $this->Flash->error(__('The timeline could not be saved. Please, try again.'));
         }
-        $discussions = $this->Timelines->Discussions->find('list', ['limit' => 200]);
+      $discussions = $this->Timelines->Discussions->find('list', ['limit' => 200]);
         $locations = $this->Timelines->Locations->find('list', ['limit' => 200]);
         $contacts = $this->Timelines->Contacts->find('list', ['limit' => 200]);
+        $owners = $this->Timelines->Owners->find('list', ['limit' => 200]);
         $tags = $this->Timelines->Tags->find('list', ['limit' => 200]);
-        $this->set(compact('timeline', 'discussions', 'locations', 'contacts', 'tags'));
+        
+        $this->set(compact('timeline', 'discussions', 'locations', 'contacts', 'tags','owners'));
         $this->set('_serialize', ['timeline']);
     }
 

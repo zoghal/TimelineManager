@@ -16,6 +16,9 @@ use Cake\ORM\Entity;
  * @property string $instagram
  * @property string $github
  * @property string $note
+ *
+ * @property \App\Model\Entity\Timeline[] $timelines
+ * @property \App\Model\Entity\TimelinesRelationship[] $timelines_relationships
  */
 class Contact extends Entity
 {
@@ -33,12 +36,11 @@ class Contact extends Entity
         '*' => true,
         'id' => false
     ];
-    
     protected $_virtual = ['full_name'];
 
     protected function _getFullName()
     {
         return $this->_properties['name'] . '  ' .
             $this->_properties['family'];
-    }    
+    }     
 }

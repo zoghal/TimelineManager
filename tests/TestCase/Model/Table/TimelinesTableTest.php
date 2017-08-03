@@ -25,10 +25,11 @@ class TimelinesTableTest extends TestCase
      */
     public $fixtures = [
         'app.timelines',
-        'app.cantacts',
+        'app.contacts',
+        'app.relationships',
+        'app.timelines_relationships',
         'app.discussions',
         'app.locations',
-        'app.timelines_relations',
         'app.tags',
         'app.timelines_tags'
     ];

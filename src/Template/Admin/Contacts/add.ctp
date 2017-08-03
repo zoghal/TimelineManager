@@ -1,7 +1,7 @@
 <?php
 /**
-  * @var \App\View\AppView $this
-  */
+* @var \App\View\AppView $this
+*/
 ?>
 <nav id="actions-sidebar">
     <ul class="side-nav">
@@ -10,21 +10,23 @@
     </ul>
 </nav>
 <div class="contacts form  content-wrapper">
-    <?= $this->Form->create($contact) ?>
+    <?= $this->Form->create($contact,['type' => 'file','novalidate' => true]) ?>
     <fieldset>
         <legend><?= __('Add Contact') ?></legend>
-        <?php
-            echo $this->Form->control('name');
-            echo $this->Form->control('family');
-            echo $this->Form->control('label');
-            echo $this->Form->control('twitter1');
-            echo $this->Form->control('twitter2');
-            echo $this->Form->control('facebook');
-            echo $this->Form->control('instagram');
-            echo $this->Form->control('github');
-            echo $this->Form->control('note');
-        ?>
-    </fieldset>
+        <div class="form-row">
+            <div class="form-col full" >
+                <?= $this->Form->control('name');?>
+            </div>
+            <div class="form-col full" >
+                <?= $this->Form->control('family');?>
+            </div>
+            <div class="form-col full" >
+                <?= $this->Form->control('label');?>
+            </div>
+        </div>
+    </fieldset>        
+  
+
     <?= $this->Form->button(__('Submit')) ?>
     <?= $this->Form->end() ?>
 </div>

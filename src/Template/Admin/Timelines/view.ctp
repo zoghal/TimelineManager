@@ -11,12 +11,14 @@
         <li><?= $this->Form->postLink(__('Delete Timeline'), ['action' => 'delete', $timeline->id], ['confirm' => __('Are you sure you want to delete # {0}?', $timeline->id)]) ?> </li>
         <li><?= $this->Html->link(__('List Timelines'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Timeline'), ['action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Contacts'), ['controller' => 'Contacts', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Contact'), ['controller' => 'Contacts', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Discussions'), ['controller' => 'Discussions', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Discussion'), ['controller' => 'Discussions', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Locations'), ['controller' => 'Locations', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Location'), ['controller' => 'Locations', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Contacts'), ['controller' => 'Contacts', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Contact'), ['controller' => 'Contacts', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Relationships'), ['controller' => 'TimelinesRelationships', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Relationship'), ['controller' => 'TimelinesRelationships', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Tags'), ['controller' => 'Tags', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Tag'), ['controller' => 'Tags', 'action' => 'add']) ?> </li>
     </ul>
@@ -29,12 +31,28 @@
             <td><?= h($timeline->caption) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Contact') ?></th>
+            <td><?= $timeline->has('contact') ? $this->Html->link($timeline->contact->fullName, ['controller' => 'Contacts', 'action' => 'view', $timeline->contact->id]) : '' ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Discussion') ?></th>
-            <td><?= $timeline->has('discussion') ? $this->Html->link($timeline->discussion->id, ['controller' => 'Discussions', 'action' => 'view', $timeline->discussion->id]) : '' ?></td>
+            <td><?= $timeline->has('discussion') ? $this->Html->link($timeline->discussion->label, ['controller' => 'Discussions', 'action' => 'view', $timeline->discussion->id]) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Location') ?></th>
-            <td><?= $timeline->has('location') ? $this->Html->link($timeline->location->id, ['controller' => 'Locations', 'action' => 'view', $timeline->location->id]) : '' ?></td>
+            <td><?= $timeline->has('location') ? $this->Html->link($timeline->location->label, ['controller' => 'Locations', 'action' => 'view', $timeline->location->id]) : '' ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Source Url') ?></th>
+            <td><?= h($timeline->source_url) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Source Freeze') ?></th>
+            <td><?= h($timeline->source_freeze) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Source Screen') ?></th>
+            <td><?= h($timeline->source_screen) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Id') ?></th>
@@ -70,38 +88,24 @@
         <?= $this->Text->autoParagraph(h($timeline->note)); ?>
     </div>
     <div class="related">
-        <h4><?= __('Related Contacts') ?></h4>
-        <?php if (!empty($timeline->contacts)): ?>
+        <h4><?= __('Related Timelines Relationships') ?></h4>
+        <?php if (!empty($timeline->relationships)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
                 <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('Name') ?></th>
-                <th scope="col"><?= __('Family') ?></th>
-                <th scope="col"><?= __('Label') ?></th>
-                <th scope="col"><?= __('Twitter1') ?></th>
-                <th scope="col"><?= __('Twitter2') ?></th>
-                <th scope="col"><?= __('Facebook') ?></th>
-                <th scope="col"><?= __('Instagram') ?></th>
-                <th scope="col"><?= __('Github') ?></th>
-                <th scope="col"><?= __('Note') ?></th>
+                <th scope="col"><?= __('Timeline Id') ?></th>
+                <th scope="col"><?= __('Contact Id') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
-            <?php foreach ($timeline->contacts as $contacts): ?>
+            <?php foreach ($timeline->relationships as $relationships): ?>
             <tr>
-                <td><?= h($contacts->id) ?></td>
-                <td><?= h($contacts->name) ?></td>
-                <td><?= h($contacts->family) ?></td>
-                <td><?= h($contacts->label) ?></td>
-                <td><?= h($contacts->twitter1) ?></td>
-                <td><?= h($contacts->twitter2) ?></td>
-                <td><?= h($contacts->facebook) ?></td>
-                <td><?= h($contacts->instagram) ?></td>
-                <td><?= h($contacts->github) ?></td>
-                <td><?= h($contacts->note) ?></td>
+                <td><?= h($relationships->id) ?></td>
+                <td><?= h($relationships->timeline_id) ?></td>
+                <td><?= h($relationships->contact_id) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Contacts', 'action' => 'view', $contacts->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Contacts', 'action' => 'edit', $contacts->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Contacts', 'action' => 'delete', $contacts->id], ['confirm' => __('Are you sure you want to delete # {0}?', $contacts->id)]) ?>
+                    <?= $this->Html->link(__('View'), ['controller' => 'TimelinesRelationships', 'action' => 'view', $relationships->id]) ?>
+                    <?= $this->Html->link(__('Edit'), ['controller' => 'TimelinesRelationships', 'action' => 'edit', $relationships->id]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'TimelinesRelationships', 'action' => 'delete', $relationships->id], ['confirm' => __('Are you sure you want to delete # {0}?', $relationships->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
