@@ -15,7 +15,7 @@
     },
     "require-dev": {
         "psy/psysh": "@stable",
-        "cakephp/debug_kit": "~3.2",
+        "cakephp/debug_kit": "~5.0",
         "cakephp/bake": "~1.1"
     },
     "suggest": {
